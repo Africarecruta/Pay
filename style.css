@@ -1,0 +1,44 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+}
+header {
+  background: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: #00ffc3;
+  text-decoration: none;
+}
+section {
+  padding: 40px;
+  border-bottom: 1px solid #333;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+}
+
+.payment-section {
+  background: #222;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #00ffc3;
+  border-radius: 10px;
+  text-align: center;
+}
+.payment-section form input[type="submit"] {
+  background: #00ffc3;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
