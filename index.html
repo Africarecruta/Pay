@@ -1,10 +1,11 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TrampoDigital – Trabalhe Online e Ganhe Dinheiro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -17,6 +18,7 @@
       color: white;
       padding: 60px 20px 40px;
       text-align: center;
+      position: relative;
     }
     header h1 {
       margin: 0;
@@ -24,15 +26,12 @@
     }
     .logo-placeholder {
       height: 80px;
-      background: white;
-      color: #333;
       margin: 0 auto 20px;
-      width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    }
+    .logo-placeholder img {
+      height: 80px;
       border-radius: 8px;
-      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     .language-toggle {
       position: absolute;
@@ -113,79 +112,99 @@
 <body>
   <header>
     <div class="logo-placeholder">
-  <img src="arquivo_000000003bd46246885635f77fb9ba00.png" alt="TrampoDigital Logo" style="height: 80px;">
+      <img src="imagens/arquivo_000000003bd46246885635f77fb9ba00.png" alt="Logotipo TrampoDigital" />
     </div>
     <h1>TrampoDigital</h1>
     <p>Conectamos você ao mundo digital com oportunidades reais de rendimento online.</p>
     <div class="language-toggle" onclick="toggleLanguage()">EN</div>
-  </header>  <div class="tabs">
+  </header>
+
+  <div class="tabs">
     <button class="tab-button active" onclick="showSection(1)">Sobre</button>
     <button class="tab-button" onclick="showSection(2)">Benefícios</button>
     <button class="tab-button" onclick="showSection(3)">Como Funciona</button>
     <button class="tab-button" onclick="showSection(4)">Inscrição</button>
     <button class="tab-button" onclick="showSection(5)">Testemunhos</button>
     <button class="tab-button" onclick="showSection(6)">FAQ</button>
-  </div>  <div id="section1" class="section-content active">
+  </div>
+
+  <div id="section1" class="section-content active">
     <h2>Sobre o TrampoDigital</h2>
-    <p>O TrampoDigital é mais do que uma simples plataforma de renda extra. É uma iniciativa que conecta talentos africanos com o mundo do trabalho online, permitindo que milhares de jovens desenvolvam suas carreiras a partir de casa. Somos um portal de oportunidades, capacitação e transformação digital.</p>
-    <p>Sabemos que a mudança começa pela informação e, por isso, disponibilizamos conteúdos ricos, atualizados e acessíveis para todos. Através do TrampoDigital, você se conecta a empresas, tarefas e clientes que estão em busca de trabalhadores dedicados, criativos e comprometidos.</p>
-    <p>Nossa missão é democratizar o acesso ao trabalho remoto com suporte, treinamentos e orientação passo a passo. Acreditamos no potencial da juventude africana e estamos aqui para provar que é possível vencer no digital com foco e disciplina.</p>
-  </div>  <div id="section2" class="section-content">
+    <p>TrampoDigital é um portal moderno e gratuito que visa promover o acesso ao trabalho remoto em toda a África. Nossa plataforma surgiu da necessidade de fornecer oportunidades de geração de renda segura, sustentável e com impacto real.</p>
+    <p>Mais do que um site, somos uma comunidade. Aqui você encontra informações, conexões, desafios, premiações e cursos práticos para evoluir. Com uma abordagem pedagógica simples e direcionada, qualquer pessoa, mesmo sem experiência, pode começar a lucrar online.</p>
+    <p>Nossa equipe está distribuída entre Moçambique, África do Sul e Brasil, o que permite uma visão ampla sobre as tendências globais do trabalho digital. Trabalhamos com empresas internacionais e projetos independentes, garantindo diversidade de tarefas.</p>
+    <p>Se você está em busca de crescimento pessoal, profissional e financeiro, TrampoDigital é o caminho.</p>
+  </div>
+
+  <div id="section2" class="section-content">
     <h2>Benefícios de Usar o TrampoDigital</h2>
     <div class="card-grid">
-      <div class="card"><h3>Ganhos Diários</h3><p>Realize tarefas simples e receba por cada uma delas. Desde microtrabalhos a projetos maiores, tudo com pagamento garantido.</p></div>
-      <div class="card"><h3>Horários Flexíveis</h3><p>Você decide quando e quanto quer trabalhar. Ideal para quem quer equilibrar estudo, família e trabalho.</p></div>
-      <div class="card"><h3>Capacitação Gratuita</h3><p>Webinars, tutoriais e cursos para te transformar em um profissional competitivo no mercado digital global.</p></div>
-      <div class="card"><h3>Rede de Oportunidades</h3><p>Tenha acesso exclusivo a plataformas parceiras, concursos e programas de incentivo com prêmios em dinheiro.</p></div>
-      <div class="card"><h3>Mentorias Semanais</h3><p>Aprenda com quem já chegou lá. Sessões ao vivo com profissionais que atuam no digital para tirar dúvidas e guiar você.</p></div>
-      <div class="card"><h3>Suporte Personalizado</h3><p>Equipe dedicada pronta para atender pelo WhatsApp e e-mail. Nunca fique sem resposta.</p></div>
+      <div class="card"><h3>Ganhos Diários</h3><p>Desde transcrições simples a testes de apps e pesquisas, você pode receber diariamente por microtarefas.</p></div>
+      <div class="card"><h3>Flexibilidade Total</h3><p>Trabalhe de manhã, à tarde ou à noite. Você escolhe o tempo e ritmo. O controle é seu.</p></div>
+      <div class="card"><h3>Educação Digital</h3><p>Conteúdo educativo sobre marketing, vendas, suporte, gestão e tecnologia para impulsionar sua carreira.</p></div>
+      <div class="card"><h3>Plataformas Parceiras</h3><p>Cadastro facilitado em sites confiáveis de freelancing, pesquisa de mercado, vendas e dropshipping.</p></div>
+      <div class="card"><h3>Certificados Digitais</h3><p>Ganhe reconhecimento ao concluir módulos e trilhas de aprendizado, melhorando seu currículo online.</p></div>
+      <div class="card"><h3>Conexão Profissional</h3><p>Conheça colegas, compartilhe experiências e crie laços com quem também está nessa jornada digital.</p></div>
     </div>
-  </div>  <div id="section3" class="section-content">
+  </div>
+
+  <div id="section3" class="section-content">
     <h2>Como Funciona</h2>
-    <p>Nosso processo é simples e acessível para todos. A plataforma foi projetada para orientar o usuário desde o início até alcançar uma renda estável:</p>
     <ol>
-      <li>Realize sua inscrição gratuita através do nosso canal oficial de WhatsApp.</li>
-      <li>Receba nosso guia introdutório com os primeiros passos e dicas essenciais.</li>
-      <li>Acesse conteúdos educacionais em português e inglês sobre trabalho online.</li>
-      <li>Escolha a área que mais combina com você: vendas, marketing, design, suporte, freelancer ou pesquisa.</li>
-      <li>Comece a realizar pequenas tarefas pagas para ganhar experiência.</li>
-      <li>Avance para projetos mais lucrativos conforme seu desempenho e dedicação.</li>
+      <li>Você se inscreve gratuitamente no canal oficial do WhatsApp.</li>
+      <li>Recebe nosso kit de boas-vindas com vídeos e textos de introdução.</li>
+      <li>Participa de desafios semanais com metas claras e recompensas simples.</li>
+      <li>Explora as áreas disponíveis: atendimento, escrita, criação de conteúdo, marketing e mais.</li>
+      <li>Executa tarefas e envia seu progresso, recebendo feedback e pagamentos.</li>
+      <li>Se destaca na comunidade e pode ser convidado para vagas em empresas parceiras.</li>
     </ol>
-    <p>Todo o caminho é orientado. Você nunca estará perdido, sempre terá alguém para ajudar.</p>
-  </div>  <div id="section4" class="section-content">
+    <p>Todo o processo é acessível e assistido por uma equipe experiente. Se você tiver dúvidas, estamos sempre a um clique de distância.</p>
+  </div>
+
+  <div id="section4" class="section-content">
     <h2>Inscrição</h2>
-    <p>Agora que você conhece os benefícios e o funcionamento, é hora de agir. Ao se inscrever, você terá acesso imediato a:</p>
+    <p>Faça parte de uma nova geração de empreendedores digitais. Ao se inscrever, você terá acesso a:</p>
     <ul>
-      <li>Canal de integração no WhatsApp;</li>
-      <li>Material de boas-vindas com links úteis e tarefas iniciais;</li>
-      <li>Suporte técnico e orientações práticas para começar a ganhar;</li>
-      <li>Convite para lives e desafios com premiação semanal.</li>
+      <li>Materiais exclusivos e passo a passo para começar do zero;</li>
+      <li>Acompanhamento semanal com envio de tarefas e dicas úteis;</li>
+      <li>Calendário de desafios mensais com premiações;</li>
+      <li>Suporte individualizado para tirar dúvidas e resolver problemas;</li>
+      <li>Eventos online, como workshops e lives com especialistas.</li>
     </ul>
     <a class="cta-button" href="https://whatsapp.com/channel/0029Vb6gXHTF6sn5wOkJhB0n" target="_blank">Inscreva-se via WhatsApp</a>
-  </div>  <div id="section5" class="section-content">
+  </div>
+
+  <div id="section5" class="section-content">
     <h2>Testemunhos</h2>
-    <p>O TrampoDigital tem mudado vidas por toda África. Veja alguns relatos de quem já está transformando sua realidade financeira conosco:</p>
     <div class="card-grid">
-      <div class="card"><strong>Joana M., Maputo</strong><br>“Nunca imaginei que poderia ganhar dinheiro apenas com meu celular. Hoje tenho uma rotina digital e já comprei meu primeiro computador.”</div>
-      <div class="card"><strong>Leonardo P., Beira</strong><br>“Sou estudante e trabalho no TrampoDigital nos intervalos das aulas. Isso me ajuda a pagar as mensalidades e ainda sobra para meus projetos.”</div>
-      <div class="card"><strong>Aline C., Nampula</strong><br>“A equipe está sempre presente, me motivando e mostrando os caminhos. Sinto que faço parte de algo grande.”</div>
-      <div class="card"><strong>Mauro J., Inhambane</strong><br>“Já indiquei mais de 20 amigos e todos estão satisfeitos. É uma oportunidade real e acessível para todos.”</div>
+      <div class="card"><strong>Joana M., Maputo</strong><br>“Hoje consigo pagar minha universidade com o que ganho no TrampoDigital. Recomendo para todos!”</div>
+      <div class="card"><strong>Leonardo P., Beira</strong><br>“Comecei sem saber nada. Em menos de 2 meses, já recebi meus primeiros pagamentos e aprendi muito.”</div>
+      <div class="card"><strong>Aline C., Nampula</strong><br>“O suporte é excelente. Me senti acolhida desde o primeiro dia. As tarefas são fáceis e com retorno rápido.”</div>
+      <div class="card"><strong>Mauro J., Inhambane</strong><br>“Já estou indicando meus amigos e familiares. Está fazendo diferença aqui no bairro.”</div>
     </div>
-  </div>  <div id="section6" class="section-content">
+  </div>
+
+  <div id="section6" class="section-content">
     <h2>Perguntas Frequentes (FAQ)</h2>
     <ul>
-      <li><strong>Preciso pagar para começar?</strong> – Não. O acesso ao grupo e aos primeiros materiais é totalmente gratuito. Oferecemos também conteúdos avançados para quem quiser se profissionalizar ainda mais.</li>
-      <li><strong>Como recebo o dinheiro?</strong> – Os pagamentos são feitos por Emola (873633616) ou PayPal (sojogomoz@gmail.com), dependendo da sua preferência e localidade.</li>
-      <li><strong>Tenho suporte?</strong> – Sim. Temos equipe de atendimento no WhatsApp para tirar dúvidas, resolver problemas técnicos e orientar em todas as etapas.</li>
-      <li><strong>Quais os requisitos mínimos?</strong> – Apenas um celular com internet. Todo o restante você aprende conosco.</li>
+      <li><strong>É confiável?</strong> – Sim. Trabalhamos com plataformas sérias e todos os pagamentos são verificados.</li>
+      <li><strong>Como recebo o dinheiro?</strong> – Via Emola (873633616) ou PayPal (sojogomoz@gmail.com).</li>
+      <li><strong>Precisa de formação?</strong> – Não. Nosso material ensina tudo o que você precisa.</li>
+      <li><strong>Posso trabalhar de qualquer lugar?</strong> – Sim. Basta ter um dispositivo com internet.</li>
+      <li><strong>Tem limite de idade?</strong> – A partir de 16 anos já pode começar.</li>
     </ul>
-  </div>  <footer>
+  </div>
+
+  <footer>
     &copy; 2025 TrampoDigital. Todos os direitos reservados.
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  <script>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
     AOS.init({ duration: 1000 });
 
     function toggleLanguage() {
-      alert("Função de idioma em construção.");
+      alert("Tradução automática para inglês em breve!");
     }
 
     function showSection(index) {
@@ -196,5 +215,6 @@
         button.classList.toggle('active', i === index - 1);
       });
     }
-  </script></body>
-  </html>
+  </script>
+</body>
+                                                                                                                                                                 </html>
